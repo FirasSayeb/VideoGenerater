@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Generate video from images</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div>
     <h1>Upload Images to Create a Video</h1>
     <form action="/upload" method="post" enctype="multipart/form-data"> 
         <input type="file" name="file" multiple>
-        <p> Select Image duration : </p>
-        <input type="number" name="duration">
-        <button type="submit">Upload</button>
+        <p> Select images duration : </p>
+        <input type="number" name="duration"> <br> <br>
+        <button type="submit" class="button-33" >Upload</button>
     </form>
+</div>
+<footer><div><span>&copy; Firas Sayeb 2024 </span><div></div><a href="mailto:firassayeb2@gmail.com"><img src="/static/gmail.jpg"></a>
+    <a href="https://github.com/FirasSayeb"><img src="/static/github.png"></a><a href="https://www.linkedin.com/in/firas-sayeb-6233a2233/"><img src="/static/linkedin.png"></a></div></footer>
 </body>
 </html>
